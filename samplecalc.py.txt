@@ -1,0 +1,50 @@
+def add(x,y):
+    s=x+y
+    print("Add : ",s)
+def subtract(x,y):
+    if x>y:
+        m=x-y
+    elif x<y:
+        m=y-x
+    else:
+        m=0
+    print("Subtract : ",m)
+def multiply(x,y):
+    p=x*y
+    print("Product : ",p)
+def divide(x,y):
+    if x%y==0:
+        d=x/y
+    elif y%x==0:
+        d=y/x
+    print("Division : ",d)
+
+print("Calculator")
+while True:
+    print("MENU")
+    print("Press 1.Addition")
+    print("Press 2.Subtraction")
+    print("Press 3.Multiplication")
+    print("Press 4.Division")
+    print("Press 5.Exit")
+    choice=int(input("Enter your choice"))
+    if choice==1:
+          x=int(input("Enter Number 1"))
+          y=int(input("Enter Number 2"))
+          add(x,y)
+    elif choice==2:
+          x=int(input("Enter Number 1"))
+          y=int(input("Enter Number 2"))
+          subtract(x,y)
+    elif choice==3:   
+          x=int(input("Enter Number 1"))
+          y=int(input("Enter Number 2"))
+          multiply(x,y)
+    elif choice==4:    
+          x=int(input("Enter Number 1"))
+          y=int(input("Enter Number 2"))
+          divide(x,y)
+    elif choice==5:
+          break
+    else:
+        print("Wrong choice")
